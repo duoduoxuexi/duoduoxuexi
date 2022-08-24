@@ -72,19 +72,19 @@ $.ajax({
     });
 
     //音量调节
-    function changevolume() {
-      var x = $("#volume").val();
+    $("#volume").on("input propertychange touchend", function () {
+      let x = $("#volume").val();
       ap.volume(x, true);
       if (x == 0) {
-        $("#volume-ico").html("<i class='iconfont icon-volume-x'></i>");
+        $("#volume-ico").html("<i class='fa-solid fa-volume-xmark'></i>");
       } else if (x > 0 && x <= 0.3) {
-        $("#volume-ico").html("<i class='iconfont icon-volume'></i>");
+        $("#volume-ico").html("<i class='fa-solid fa-volume-off'></i>");
       } else if (x > 0.3 && x <= 0.6) {
-        $("#volume-ico").html("<i class='iconfont icon-volume-1'></i>");
+        $("#volume-ico").html("<i class='fa-solid fa-volume-low'></i>");
       } else {
-        $("#volume-ico").html("<i class='iconfont icon-volume-2'></i>");
+        $("#volume-ico").html("<i class='fa-solid fa-volume-high'></i>");
       }
-    }
+    });
 
     $("#music").hover(
       function () {
