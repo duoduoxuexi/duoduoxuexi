@@ -1,4 +1,9 @@
 @font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('../font/iconfont1.ttf') format('truetype');
+}
+
+@font-face {
     font-family: "Pacifico-Regular";
     src: url('../font/Pacifico-Regular.ttf') format('truetype');
 }
@@ -25,12 +30,38 @@
   src: url('iconfont.ttf?t=1661260343864') format('truetype');
 }
 
+
+
 .iconfont {
     font-family: "iconfont" !important;
     font-size: 16px;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-faxiandengpao2:before {
+  content: "\e68e";
+}
+
+.icon-1:before {
+  content: "\e606";
+}
+
+.icon-weixin:before {
+  content: "\e600";
+}
+
+.icon-yanhua:before {
+  content: "\e673";
+}
+
+.icon-wode:before {
+  content: "\e615";
+}
+
+.icon-xinfeng:before {
+  content: "\e622";
 }
 
 .icon-z_shangpinheji:before {
@@ -169,11 +200,6 @@
     content: "\e8db";
 }
 
-.icon-weixin:before {
-    content: "\e600";
-}
-
-
 .icon-yinhao-copy:before {
     content: "\e608";
 }
@@ -181,18 +207,4 @@
 .icon-yinhao-copy-copy:before {
     content: "\e62e";
 }
-.icon-1:before {
-  content: "\e606";
-}
 
-.icon-weixin:before {
-  content: "\e600";
-}
-
-.icon-yanhua:before {
-  content: "\e673";
-}
-
-.icon-xinfeng:before {
-  content: "\e622";
-}
