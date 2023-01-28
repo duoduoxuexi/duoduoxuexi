@@ -51,7 +51,7 @@ else if (window.attachEvent)
 else window.onload = downloadJSAtOnload;
 
 //新春灯笼 （ 需要时取消注释 ）
-/*
+
 new_element=document.createElement("link");
 new_element.setAttribute("rel","stylesheet");
 new_element.setAttribute("type","text/css");
@@ -62,7 +62,6 @@ new_element=document.createElement("script");
 new_element.setAttribute("type","text/javascript");
 new_element.setAttribute("src","./js/lantern.js");
 document.body.appendChild(new_element);
-*/
 
 //火狐浏览器独立样式
 if (isFirefox = navigator.userAgent.indexOf("Firefox") > 0) {
